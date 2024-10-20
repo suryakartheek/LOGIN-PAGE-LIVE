@@ -1,32 +1,27 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
-    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="login-form">
-            <h1>Login</h1>
-            <form>
-                <div class="form-group">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <div class="form-group">
-                    <input type="checkbox" id="rememberMe" name="rememberMe">
-                    <label for="rememberMe">Remember Me</label>
-                    <a href="#">Forget Password</a>
-                </div>
-                <button type="submit">Login</button>
-                <p>Don't have an account? <a href="#">Register</a></p>
-            </form>
+    <div class="neumorphic-card">
+        <div class="neumorphic-card__header">Login</div>
+        <form onsubmit="event.preventDefault()" action="" class="neumorphic-form">
+            <div class="neumorphic-input-wrapper">
+                <label for="neumorphic-username">Username</label>
+                <input type="text" name="neumorphic-username" id="neumorphic-username">
+            </div>
+            <div class="neumorphic-input-wrapper">
+                <label for="neumorphic-password">Password</label>
+                <input type="password" name="neumorphic-password" id="neumorphic-password">
+            </div>
+            <button type="submit">Sign in</button>
+        </form>
+        <div class="neumorphic-card__footer">
+            <p>Forgot Password? <a href="#">click here</a></p>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
